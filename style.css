@@ -13,9 +13,11 @@ body{
     --primary-color: #1A5AFF;
     --secoundary-color: #25262A;
     --text-color:rgba(37,38,42,.8);
+    --white:#fff;
 
     /* font  */
     --ClashDisplay-Regular:ClashDisplay-Regular;
+    --ClashDisplay-Medium:ClashDisplay-Medium;
     --ClashDisplay-Semibold:ClashDisplay-Semibold;
     --ClashDisplay-Bold:ClashDisplay-Bold;
     --Poppins:"Poppins", serif;
@@ -94,13 +96,18 @@ p{
 .menuArea ul li.subMenu > a::after {
     content: "";
     background-image: url(./image/icon/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     width: 12px;
     height: 8px;
     top: 7px;
     right: -22px;
-    background-repeat: no-repeat;
-    background-position: center;
+    transition: .3s ease;
+}
+.menuArea ul li:hover> a::after{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
 }
 .menuArea ul li:hover> a{
     color: var(--secoundary-color);
@@ -140,8 +147,15 @@ p{
     font-family: var(--ClashDisplay-Semibold);
     padding-left: 10px;    
 }
-
-
-
+.button{
+    font-size:16px;
+    border-radius: 12px;
+    padding: 20px 40px;
+    font-family: var(--ClashDisplay-Medium);
+}
+.clrblue{
+    background-color: var(--primary-color);
+    color:var(--white);
+}
 /* header area End */
 

@@ -18,6 +18,7 @@ body{
     --ClashDisplay-Regular:ClashDisplay-Regular;
     --ClashDisplay-Semibold:ClashDisplay-Semibold;
     --ClashDisplay-Bold:ClashDisplay-Bold;
+    --Poppins:"Poppins", serif;
 }
 ul{
     list-style: none;
@@ -48,4 +49,99 @@ p{
     line-height: 1.6;
     color: var(--text-color);
 }
+.container{
+    max-width: 1280px;
+}
+/* header area Start */
+.header-wrapper{
+    padding: 47px 0 70px;
+}
+.headerContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* logo css */
+.header_logo{
+    padding:0 80px;
+}
+.header_logo img{
+    height: 48px;
+}
+/* menu css */
+.menuArea ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.menuArea ul li{
+    padding: 0 24px;    
+}
+.menuArea ul li:first-child{
+    padding-left: 0;
+}
+.menuArea ul li:last-child{
+    padding-right: 0;
+}
+.menuArea ul li a{
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-family: var(--ClashDisplay-Regular);
+    transition:all 0.5s ease;
+    position: relative;
+}
+.menuArea ul li.subMenu > a::after {
+    content: "";
+    background-image: url(./image/icon/arrow.svg);
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    top: 7px;
+    right: -22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menuArea ul li:hover> a{
+    color: var(--secoundary-color);
+    font-family: var(--ClashDisplay-Semibold);
+}
+.menuArea ul li.active > a{
+    color: var(--secoundary-color);
+    font-family: var(--ClashDisplay-Semibold);
+}
+/* sub menu css */
+.menuArea ul li ul {
+    position: absolute;
+    display: block;
+    max-width: 200px;
+    min-width: 125px;
+    box-shadow: -0.1px 0px 0.5px var(--secoundary-color), 0.1px 0.1px 0.5px var(--secoundary-color);
+    padding: 10px 15px;
+    left: 0;
+    top: calc(100% + 30px);
+    visibility: hidden;
+    opacity: 0;
+    transition:.3s;
+}
+.menuArea ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100%);
+}
+.menuArea ul li ul li{
+    padding: 0;    
+}
+.menuArea ul li ul li a{
+    transition: .5s ease;
+}
+.menuArea ul li ul li:hover a{
+    color: var(--secoundary-color);
+    font-family: var(--ClashDisplay-Semibold);
+    padding-left: 10px;    
+}
+
+
+
+/* header area End */
 

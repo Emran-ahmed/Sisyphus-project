@@ -9,9 +9,15 @@ body{
     font-family:"Poppins", serif;
 }
 :root{
+    /* color  */
     --primary-color: #1A5AFF;
     --secoundary-color: #25262A;
     --text-color:rgba(37,38,42,.8);
+
+    /* font  */
+    --ClashDisplay-Regular:ClashDisplay-Regular;
+    --ClashDisplay-Semibold:ClashDisplay-Semibold;
+    --ClashDisplay-Bold:ClashDisplay-Bold;
 }
 ul{
     list-style: none;
@@ -42,3 +48,4 @@ p{
     line-height: 1.6;
     color: var(--text-color);
 }
+

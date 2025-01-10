@@ -11,6 +11,7 @@
     --secoundary-color: #25262A;
     --text-color:rgba(37,38,42,.8);
     --white:#fff;
+    --bgclr:#EEEBE5;
 
     /* fonts  */
     /* custom font  */
@@ -202,7 +203,7 @@ p{
 .bannarContent h1 span{
     display: block;
 }
-.bannarContent h1 span.textblue{
+.textblue{
     color: var(--primary-color);
 }
 .bannarContent p {
@@ -215,17 +216,35 @@ p{
     height: 548px;
 }
 /* Banner area End  */
-/* Satisfied clients area Start */
+/* Serving & Satisfied clients area Start */
 .ServingArea{
     position: relative;
+    background-color: var(--bgclr);
 }
+/* Satisfied clients area Start */
 .satisfied-ClientsArea {
     background-color: var(--secoundary-color);
     height: 348px;
     width: 1280px;
     position: absolute;
     top: -174px;
-    left: 0px;
+    left: calc((100% - 1280px)/2);
     border-radius: 40px;
 }
-/* Satisfied clients area End */
+/* Serving area Start */
+.Serving{
+    padding-top: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Serving h2{
+    font-family: var(--ClashDisplay-Semibold);
+    font-size: 48px;
+}
+.Serving p{
+    font-size: 18px;
+    align-self:self-end;
+    width: 415px;
+}
+/* Serving & Satisfied clients area End */

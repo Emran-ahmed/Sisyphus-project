@@ -56,6 +56,7 @@ p{
 }
 .container{
     max-width: 1280px;
+    margin: 0 auto;
 }
 /* header area Start */
 .header-wrapper{
@@ -214,4 +215,17 @@ p{
     height: 548px;
 }
 /* Banner area End  */
-
+/* Satisfied clients area Start */
+.ServingArea{
+    position: relative;
+}
+.satisfied-ClientsArea {
+    background-color: var(--secoundary-color);
+    height: 348px;
+    width: 1280px;
+    position: absolute;
+    top: -174px;
+    left: 0px;
+    border-radius: 40px;
+}
+/* Satisfied clients area End */

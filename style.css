@@ -5,9 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:"Poppins", serif;
-}
 :root{
     /* color  */
     --primary-color: #1A5AFF;
@@ -15,12 +12,18 @@ body{
     --text-color:rgba(37,38,42,.8);
     --white:#fff;
 
-    /* font  */
+    /* fonts  */
+    /* custom font  */
     --ClashDisplay-Regular:ClashDisplay-Regular;
     --ClashDisplay-Medium:ClashDisplay-Medium;
     --ClashDisplay-Semibold:ClashDisplay-Semibold;
     --ClashDisplay-Bold:ClashDisplay-Bold;
+    /* google font  */
     --Poppins:"Poppins", serif;
+}
+body{
+    font-family:var(--Poppins);
+    background-color: var(--white);
 }
 ul{
     list-style: none;
@@ -92,6 +95,7 @@ p{
     font-family: var(--ClashDisplay-Regular);
     transition:all 0.5s ease;
     position: relative;
+    font-size: 16px;
 }
 .menuArea ul li.subMenu > a::after {
     content: "";
@@ -130,6 +134,7 @@ p{
     visibility: hidden;
     opacity: 0;
     transition:.3s;
+    background-color: var(--white);
 }
 .menuArea ul li:hover ul{
     visibility: visible;
@@ -159,4 +164,54 @@ p{
     color:var(--white);
 }
 /* header area End */
+/* Banner area Start  */
+.bannarContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner_customerArea{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.banner_customerArea ul{
+    display: flex;
+    align-items: center;
+}
+.banner_customerArea ul li{
+    margin-left: -12px;
+}
+.banner_customerArea ul li:first-child{
+    margin-left: 0;
+}
+.banner_customerArea span{
+    color: var(--secoundary-color);
+    padding-left: 12px;
+    font-family: var(--Poppins);
+    font-size: 14px;
+    font-weight: 600;
+}
+.bannarContent h1{
+    font-family: var(--ClashDisplay-Semibold);
+    color: var(--secoundary-color);
+    font-size: 58px;
+    text-align: center;
+}
+.bannarContent h1 span{
+    display: block;
+}
+.bannarContent h1 span.textblue{
+    color: var(--primary-color);
+}
+.bannarContent p {
+    font-weight: 400;
+    width: 565px;
+    text-align: center;
+    padding-top: 24px;
+}
+.bannarContent > img{
+    height: 548px;
+}
+/* Banner area End  */
 
